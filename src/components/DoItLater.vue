@@ -39,7 +39,7 @@
           </g>
         </g>
       </svg>
-      <h2>Do It Later</h2>
+      <h2>Do It Later <span>( {{(todoItems.filter(todoItems => todoItems.status === 'later')).length}} )</span></h2>
     </div>
     <div v-if="isVisible">
       <div v-for="(item, index) in todoItems" :key="index">

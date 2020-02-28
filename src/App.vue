@@ -233,6 +233,10 @@ body {
   margin-left: 10px;
 }
 
+.container__subHeading h2 span {
+  font-size: 1.5rem;
+}
+
 .container__reset {
   margin-top: 7rem;
   text-align: center;
@@ -253,6 +257,7 @@ body {
 .creditContainer {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .creditContainer h4 {
@@ -421,6 +426,12 @@ body {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1300px) {
+  .modal-container {
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 48.5%;
@@ -431,12 +442,19 @@ body {
   html {
     font-size: 52.5%;
   }
+  .settings img {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .container {
     width: 80%;
   }
+  .modal-container {
+    width: 90%;
+  }
 }
+
 /*# sourceMappingURL=main.css.map */
 </style>

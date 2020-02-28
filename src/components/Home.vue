@@ -137,6 +137,7 @@ export default {
       this.todoItems = [];
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.todoItems));
     },
+
     keepListShort() {
       for (var key in window.localStorage) {
         // eslint-disable-next-line no-prototype-builtins

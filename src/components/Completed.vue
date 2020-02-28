@@ -39,7 +39,7 @@
           </g>
         </g>
       </svg>
-      <h2>Completed</h2>
+      <h2>Completed <span>( {{(todoItems.filter(todoItems => todoItems.status === 'done')).length}} )</span></h2>
     </div>
     <div v-if="isVisible">
       <div v-for="(item, index) in todoItems" :key="index">

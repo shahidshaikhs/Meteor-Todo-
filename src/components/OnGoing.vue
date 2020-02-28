@@ -39,7 +39,7 @@
           </g>
         </g>
       </svg>
-      <h2>On Going</h2>
+      <h2>On Going <span>( {{(todoItems.filter(todoItems => todoItems.status === 'pending')).length}} )</span></h2>
     </div>
     <div v-if="isVisible">
       <div v-for="(item, index) in todoItems" :key="index">
